@@ -1,6 +1,6 @@
 export async function GET(request: Request) {
     const response = await fetch(
-      "https://sonnytestapp.azurewebsites.net/api/getChatGPTSuggestion",
+      "http://localhost:7071/api/getChatGPTSuggestions",
       {
         cache: "no-store",
       }

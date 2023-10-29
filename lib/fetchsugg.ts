@@ -6,3 +6,4 @@ const fetchsugg=()=>
     }).then((res)=>res.json());
 
 export default fetchsugg;
+

@@ -1,4 +1,7 @@
-const { app } = require('@azure/functions');
+import pkg from '@azure/functions';
+const { AzureFunction, Context, HttpRequest,app } = pkg;
+import  openai  from "../../lib/openai";
+
 
 app.http('getChatGPTSuggestions', {
     methods: ['GET', 'POST'],
